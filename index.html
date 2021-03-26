@@ -7,8 +7,8 @@
         <meta name="description" content="Projet n°2 OpenClassrooms Boris Montavon">
         <meta name="author" content="Boris Montavon">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <link rel="stylesheet" href="./src/css/main.css"> -->
-        <link rel="stylesheet" href="./dist/css/main.min.css">
+        <link rel="stylesheet" href="./src/css/main.css">
+        <!-- <link rel="stylesheet" href="./dist/css/main.min.css"> -->
     </head>
     <body>
         <header>
@@ -16,9 +16,9 @@
                 <div>
                     <img src="assets/logo/Reservia.svg" alt="logo">
                 </div>
-                <div class="nav-links">
-                    <div class="links-container-desk">
-                        <ul class="links">
+                <div id="nav-links">
+                    <div id="links-container-desk">
+                        <ul id="links">
                             <li>
                                 <a href="#accomodation">Hébergements</a>
                             </li>
@@ -28,15 +28,15 @@
                         </ul>
                     </div>
                     <div>
-                        <ul class="register">
+                        <ul id="register">
                             <li>
                                 <a href="#"><strong>S'inscrire</strong></a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="links-container-mobile">
-                    <ul class="links-mobile">
+                <div id="links-container-mobile">
+                    <ul id="links-mobile">
                         <li>
                             <a href="#accomodation">Hébergements</a>
                         </li>
@@ -48,21 +48,20 @@
             </nav>
         </header>
         <section>
-            <div class="filter-container">
+            <div id="filter-container">
                 <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
                 <h4>En plein centre ville ou en pleine nature</h4>
                 <form action="#">
-                    <div class="input-container">
+                    <div id="input-container">
                         <i class="fas fa-map-marker-alt"></i>
                         <input type="text" placeholder="Marseille, France">
-                        <button class="desktop-search-btn search-skin" type="button" value="submit">Rechercher</button>
-                        <button class="mobile-search-btn search-skin" type="button" value="submit"><i class="fas fa-search"></i></button>
+                        <button id="desktop-search-btn" class="search-skin" type="button" value="submit">Rechercher</button>
+                        <button id="mobile-search-btn" class="search-skin" type="button" value="submit"><i class="fas fa-search"></i></button>
                     </div>
-                    
                 </form>
-                <div class="filters">
+                <div id="filters">
                     <h4>Filtres</h4>
-                    <div class="filters-container">
+                    <div id="filters-container">
                         <div class="button-filter-container">
                             <i class="fas fa-money-bill-wave"></i><button>Économique</button>
                         </div>
@@ -76,7 +75,7 @@
                             <i class="fas fa-dog"></i><button>Animaux autorisés</button>
                         </div>
                     </div>
-                    <div class="filters-info">
+                    <div id="filters-info">
                         <i class="fas fa-info"></i>
                         <p>Plus de 500 logements sont disponibles dans cette ville</p>
                     </div>
@@ -85,8 +84,8 @@
         </section>
         <section id="accomodation">
             <div class="results-container">
-                <div class="popular-container">
-                    <div class="popular-title">
+                <div id="popular-container">
+                    <div id="popular-title">
                         <h2>Les plus populaires</h2>
                         <i class="fas fa-chart-line"></i>
                     </div>
@@ -141,11 +140,11 @@
                         </a>
                     </div>
                 </div>
-                <div class="accomodation-container">
+                <div id="accomodation-container">
                     <h2>Hébergements à Marseille</h2>
-                    <div class="result-container">
+                    <div id="result-container">
                         <a href="#" class="accomodation-result-container">
-                            <div class="result-1 accomodation-result-skin"></div>
+                            <div id="result-1" class="accomodation-result-skin"></div>
                             <h5>Auberge la Cannebière</h5>
                             <p>nuit à partir de 25€</p>
                             <div class="result-mark four-on-five">
@@ -157,7 +156,7 @@
                             </div>
                         </a>
                         <a href="#" class="accomodation-result-container">
-                            <div class="result-2 accomodation-result-skin"></div>
+                            <div id="result-2" class="accomodation-result-skin"></div>
                             <h5>Hôtel du port</h5>
                             <p>nuit à partir de 52€</p>
                             <div class="result-mark">
@@ -169,7 +168,7 @@
                             </div>
                         </a>
                         <a href="#" class="accomodation-result-container">
-                            <div class="result-3 accomodation-result-skin"></div>
+                            <div id="result-3" class="accomodation-result-skin"></div>
                             <h5>Hôtel Les mouettes</h5>
                             <p>nuit à partir de 76€</p>
                             <div class="result-mark four-on-five">
@@ -181,7 +180,7 @@
                             </div>
                         </a>
                         <a href="#" class="accomodation-result-container">
-                            <div class="result-4 accomodation-result-skin"></div>
+                            <div id="result-4" class="accomodation-result-skin"></div>
                             <h5>Hôtel de la mer</h5>
                             <p>nuit à partir de 46€</p>
                             <div class="result-mark three-on-five">
@@ -193,7 +192,7 @@
                             </div>
                         </a>
                         <a href="#" class="accomodation-result-container">
-                            <div class="result-5 accomodation-result-skin"></div>
+                            <div id="result-5" class="accomodation-result-skin"></div>
                             <h5>Auberge Le Panier</h5>
                             <p>nuit à partir de 23€</p>
                             <div class="result-mark four-on-five">
@@ -205,7 +204,7 @@
                             </div>
                         </a>
                         <a href="#" class="accomodation-result-container">
-                            <div class="result-6 accomodation-result-skin"></div>
+                            <div id="result-6" class="accomodation-result-skin"></div>
                             <h5>Hôtel chez Amina</h5>
                             <p>nuit à partir de 96€</p>
                             <div class="result-mark">
@@ -217,36 +216,36 @@
                             </div>
                         </a>
                     </div>
-                    <button class="show-more-accomodation">Afficher plus</button>
+                    <button id="show-more-accomodation">Afficher plus</button>
                 </div>
             </div>
         </section>
         <section id="activities">
-            <div class="activities-container">
+            <div id="activities-container">
                 <h2>Activités à Marseille</h2>
-                <div class="activities-showoff">
-                    <a href="#" class="activities-showoff-container asc-1">
-                        <div class="activities-img-1 activities-img-skin"></div>
+                <div id="activities-showoff">
+                    <a href="#" id="asc-1" class="activities-showoff-container">
+                        <div id="activities-img-1" class="activities-img-skin"></div>
                         <h5>Vieux Port</h5>
                     </a>
-                    <a href="#" class="activities-showoff-container asc-2">
-                        <div class="activities-img-2 activities-img-skin"></div>
+                    <a href="#" id="asc-2" class="activities-showoff-container">
+                        <div id="activities-img-2" class="activities-img-skin"></div>
                         <h5>Fort de Pomègues</h5>
                     </a>
-                    <a href="#" class="activities-showoff-container asc-3">
-                        <div class="activities-img-3 activities-img-skin"></div>
+                    <a href="#" id="asc-3" class="activities-showoff-container">
+                        <div id="activities-img-3" class="activities-img-skin"></div>
                         <h5>Îles du Frioul</h5>
                     </a>
-                    <a href="#" class="activities-showoff-container asc-4">
-                        <div class="activities-img-4 activities-img-skin"></div>
+                    <a href="#" id="asc-4" class="activities-showoff-container">
+                        <div id="activities-img-4" class="activities-img-skin"></div>
                         <h5>Parc National des Calanques</h5>
                     </a>
-                    <a href="#" class="activities-showoff-container asc-5">
-                        <div class="activities-img-5 activities-img-skin"></div>
+                    <a href="#" id="asc-5" class="activities-showoff-container">
+                        <div id="activities-img-5" class="activities-img-skin"></div>
                         <h5>Notre-Dame-de-la-Garde</h5>
                     </a>
-                    <a href="#" class="activities-showoff-container asc-6">
-                        <div class="activities-img-6 activities-img-skin"></div>
+                    <a href="#" id="asc-6" class="activities-showoff-container">
+                        <div id="activities-img-6" class="activities-img-skin"></div>
                         <h5>Parc Longchamp</h5>
                     </a>
                 </div>
